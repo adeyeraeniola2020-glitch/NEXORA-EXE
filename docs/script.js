@@ -1,11 +1,15 @@
 // NEXORA EXE - Gaming Website
 
-console.log("Welcome to NEXORA EXE!");
-
 function welcomePlayer() {
-    alert("Welcome to NEXORA EXE! 🎮");
+    const gamesSection = document.getElementById("girly");
+
+    if (gamesSection) {
+        gamesSection.scrollIntoView({
+            behavior: "smooth"
+        });
+    }
 }
 
 function comingSoon() {
-    alert("This game is coming soon! Stay tuned.");
+    alert("This game is coming soon to NEXORA EXE!");
 }

@@ -52,6 +52,48 @@
     </footer>
 
     <script src="script.js"></script>
+<!-- DRESS UP FEST GAME -->
+<section id="dress-up-game" class="game-container">
+    <h2>👗 DRESS UP FEST</h2>
+    <p>Create your own fabulous fashion look!</p>
 
+    <div class="dress-up-area">
+        <div class="character">
+            <div id="character-display">👩🏽</div>
+            <h3>Your Fashion Model</h3>
+        </div>
+
+        <div class="fashion-options">
+            <h3>Choose Your Style</h3>
+
+            <h4>Hairstyles</h4>
+            <button onclick="changeStyle('hair', '💇🏽‍♀️')">Hairstyle 1</button>
+            <button onclick="changeStyle('hair', '👩🏽‍🦱')">Hairstyle 2</button>
+            <button onclick="changeStyle('hair', '👩🏽‍🦰')">Hairstyle 3</button>
+
+            <h4>Outfits</h4>
+            <button onclick="changeStyle('outfit', '👗')">Dress</button>
+            <button onclick="changeStyle('outfit', '👚')">Top</button>
+            <button onclick="changeStyle('outfit', '👕')">Casual</button>
+
+            <h4>Shoes</h4>
+            <button onclick="changeStyle('shoes', '👠')">Heels</button>
+            <button onclick="changeStyle('shoes', '👟')">Sneakers</button>
+            <button onclick="changeStyle('shoes', '👢')">Boots</button>
+
+            <h4>Accessories</h4>
+            <button onclick="changeStyle('accessory', '💍')">Ring</button>
+            <button onclick="changeStyle('accessory', '👜')">Bag</button>
+            <button onclick="changeStyle('accessory', '👑')">Crown</button>
+
+            <button onclick="resetFashion()">Reset Look</button>
+        </div>
+    </div>
+
+    <div id="fashion-result">
+        <h3>Your Current Look</h3>
+        <p id="selected-style">Choose your fashion items!</p>
+    </div>
+</section>
 </body>
 </html>

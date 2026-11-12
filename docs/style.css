@@ -59,3 +59,97 @@ footer {
     background: #160c29;
     color: #c084fc;
 }
+/* NEXORA EXE - DRESS UP FEST */
+
+.game-container {
+    background: linear-gradient(135deg, #170b2b, #080808);
+    border: 2px solid #a855f7;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 30px 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.35);
+}
+
+.game-container h2 {
+    color: #d8a7ff;
+    font-size: 30px;
+    text-shadow: 0 0 12px #a855f7;
+}
+
+.game-container p {
+    color: white;
+}
+
+.dress-up-area {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.character {
+    background: #24113b;
+    border: 2px solid #a855f7;
+    border-radius: 18px;
+    padding: 25px;
+    min-width: 180px;
+}
+
+#character-display {
+    font-size: 75px;
+    min-height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fashion-options {
+    background: #1a1028;
+    border-radius: 18px;
+    padding: 20px;
+    max-width: 350px;
+}
+
+.fashion-options h3,
+.fashion-options h4 {
+    color: #d8a7ff;
+}
+
+.fashion-options button {
+    background: #8b35d6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.fashion-options button:hover {
+    background: #b66aff;
+    transform: scale(1.05);
+}
+
+#fashion-result {
+    background: #24113b;
+    border: 1px solid #a855f7;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 25px;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .game-container {
+        padding: 15px;
+    }
+
+    .fashion-options {
+        width: 100%;
+    }
+}

@@ -1,99 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NEXORA EXE | Gaming World</title>
+    <title>NEXORA EXE - Gaming World</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <h1>NEXORA EXE</h1>
-        <p>ENTER THE WORLD OF GAMING</p>
+        <p>Your Ultimate Gaming World</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#girly">Girly Games</a>
+            <a href="#multiplayer">Multiplayer Games</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#girly">Girly Games</a>
-        <a href="#multiplayer">Multiplayer</a>
-    </nav>
 
+    <!-- HOME SECTION -->
     <section id="home">
         <h2>WELCOME TO NEXORA EXE</h2>
-        <p>Your ultimate destination for games, fun and competition.</p>
-        <button onclick="welcomePlayer()">START PLAYING</button>
+
+        <p>
+            Enter a world of fashion, creativity,
+            competition and fun!
+        </p>
+
+        <button onclick="welcomePlayer()">
+            START PLAYING
+        </button>
     </section>
 
+
+    <!-- GIRLY GAMES SECTION -->
     <section id="girly">
+
         <h2>GIRLY GAMES</h2>
 
-        <button onclick="comingSoon()">Dress Up Challenge</button>
-        <button onclick="comingSoon()">Makeup Artist</button>
-        <button onclick="comingSoon()">Bestie Quiz</button>
-        <button onclick="comingSoon()">Fashion Battle</button>
+        <p>Explore your creativity and show your style.</p>
+
+
+        <!-- DRESS UP CHALLENGE GAME -->
+        <div id="dress-up-game" class="game-container">
+
+            <h2>👗 DRESS UP CHALLENGE</h2>
+
+            <p>
+                Become a fashion stylist!
+                Choose your favourite fashion items
+                and create a beautiful look.
+            </p>
+
+            <div class="dress-up-area">
+
+                <!-- CHARACTER -->
+                <div class="character">
+
+                    <h3>Your Fashion Model</h3>
+
+                    <div id="character-display">
+                        👩🏽
+                    </div>
+
+                </div>
+
+
+                <!-- FASHION OPTIONS -->
+                <div class="fashion-options">
+
+                    <h3>CHOOSE YOUR STYLE</h3>
+
+
+                    <h4>💇🏽 Hairstyles</h4>
+
+                    <button onclick="changeStyle('hair', '💇🏽‍♀️')">
+                        Hairstyle 1
+                    </button>
+
+                    <button onclick="changeStyle('hair', '👩🏽‍🦱')">
+                        Hairstyle 2
+                    </button>
+
+                    <button onclick="changeStyle('hair', '👩🏽‍🦰')">
+                        Hairstyle 3
+                    </button>
+
+
+                    <h4>👗 Outfits</h4>
+
+                    <button onclick="changeStyle('outfit', '👗')">
+                        Dress
+                    </button>
+
+                    <button onclick="changeStyle('outfit', '👚')">
+                        Top
+                    </button>
+
+                    <button onclick="changeStyle('outfit', '👕')">
+                        Casual
+                    </button>
+
+
+                    <h4>👠 Shoes</h4>
+
+                    <button onclick="changeStyle('shoes', '👠')">
+                        Heels
+                    </button>
+
+                    <button onclick="changeStyle('shoes', '👟')">
+                        Sneakers
+                    </button>
+
+                    <button onclick="changeStyle('shoes', '👢')">
+                        Boots
+                    </button>
+
+
+                    <h4>💍 Accessories</h4>
+
+                    <button onclick="changeStyle('accessory', '💍')">
+                        Ring
+                    </button>
+
+                    <button onclick="changeStyle('accessory', '👜')">
+                        Bag
+                    </button>
+
+                    <button onclick="changeStyle('accessory', '👑')">
+                        Crown
+                    </button>
+
+
+                    <br><br>
+
+                    <button onclick="resetFashion()">
+                        RESET LOOK
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SELECTED FASHION ITEMS -->
+            <div id="fashion-result">
+
+                <h3>YOUR CURRENT LOOK</h3>
+
+                <p id="selected-style">
+                    Choose your fashion items!
+                </p>
+
+            </div>
+
+        </div>
+
     </section>
 
+
+    <!-- MULTIPLAYER GAMES SECTION -->
     <section id="multiplayer">
+
         <h2>MULTIPLAYER GAMES</h2>
 
-        <button onclick="comingSoon()">Tic-Tac-Toe</button>
-        <button onclick="comingSoon()">Quiz Battle</button>
-        <button onclick="comingSoon()">Truth or Dare</button>
-        <button onclick="comingSoon()">Rock Paper Scissors</button>
+        <p>
+            Challenge your friends and enjoy playing together!
+        </p>
+
+        <button onclick="comingSoon()">
+            TIC-TAC-TOE
+        </button>
+
+        <button onclick="comingSoon()">
+            QUIZ BATTLE
+        </button>
+
+        <button onclick="comingSoon()">
+            TRUTH OR DARE
+        </button>
+
+        <button onclick="comingSoon()">
+            ROCK PAPER SCISSORS
+        </button>
+
     </section>
 
+
+    <!-- FOOTER -->
     <footer>
         <p>© 2026 NEXORA EXE. All Rights Reserved.</p>
     </footer>
 
+
     <script src="script.js"></script>
-<!-- DRESS UP CHALLENGE GAME -->
-<section id="dress-up-game''  class="game-container">
-    <h2>👗 DRESS UP CHALLENGE</h2>
-    <p>Create your own fabulous fashion look!</p>
 
-    <div class="dress-up-area">
-        <div class="character">
-            <div id="character-display">👩🏽</div>
-            <h3>Your Fashion Model</h3>
-        </div>
-
-        <div class="fashion-options">
-            <h3>Choose Your Style</h3>
-
-            <h4>Hairstyles</h4>
-            <button onclick="changeStyle('hair', '💇🏽‍♀️')">Hairstyle 1</button>
-            <button onclick="changeStyle('hair', '👩🏽‍🦱')">Hairstyle 2</button>
-            <button onclick="changeStyle('hair', '👩🏽‍🦰')">Hairstyle 3</button>
-
-            <h4>Outfits</h4>
-            <button onclick="changeStyle('outfit', '👗')">Dress</button>
-            <button onclick="changeStyle('outfit', '👚')">Top</button>
-            <button onclick="changeStyle('outfit', '👕')">Casual</button>
-
-            <h4>Shoes</h4>
-            <button onclick="changeStyle('shoes', '👠')">Heels</button>
-            <button onclick="changeStyle('shoes', '👟')">Sneakers</button>
-            <button onclick="changeStyle('shoes', '👢')">Boots</button>
-
-            <h4>Accessories</h4>
-            <button onclick="changeStyle('accessory', '💍')">Ring</button>
-            <button onclick="changeStyle('accessory', '👜')">Bag</button>
-            <button onclick="changeStyle('accessory', '👑')">Crown</button>
-
-            <button onclick="resetFashion()">Reset Look</button>
-        </div>
-    </div>
-
-    <div id="fashion-result">
-        <h3>Your Current Look</h3>
-        <p id="selected-style">Choose your fashion items!</p>
-    </div>
-</section>
 </body>
 </html>
